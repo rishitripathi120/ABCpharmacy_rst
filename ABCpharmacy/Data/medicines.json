@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "fullName": "Crocin Advance",
+    "notes": "For fever and pain relief",
+    "expiryDate": "2026-10-01T00:00:00",
+    "quantity": 23,
+    "price": 50.00,
+    "brand": "GSK"
+  },
+  {
+    "id": 2,
+    "fullName": "Azithromycin 500mg",
+    "notes": "Antibiotic",
+    "expiryDate": "2027-02-15T00:00:00",
+    "quantity": 7,
+    "price": 85.50,
+    "brand": "Cipla"
+  },
+  {
+    "id": 3,
+    "fullName": "Dolo 650",
+    "notes": "For fever",
+    "expiryDate": "2026-09-25T00:00:00",
+    "quantity": 15,
+    "price": 32.00,
+    "brand": "Micro Labs"
+  },
+  {
+    "id": 4,
+    "fullName": "abcx",
+    "notes": "aa",
+    "expiryDate": "2026-10-01T00:00:00",
+    "quantity": 2,
+    "price": 0.02,
+    "brand": "jhjhj"
+  },
+  {
+    "id": 5,
+    "fullName": "hahah",
+    "notes": "jjljjljl",
+    "expiryDate": "2029-01-02T00:00:00",
+    "quantity": 4,
+    "price": 90,
+    "brand": "jhjkhj"
+  }
+]

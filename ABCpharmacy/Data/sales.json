@@ -1,0 +1,29 @@
+[
+  {
+    "Id": 1,
+    "MedicineId": 1,
+    "MedicineName": "Crocin Advance",
+    "Quantity": 2,
+    "UnitPrice": 50.00,
+    "TotalAmount": 100.00,
+    "SaleDate": "2026-09-16T00:48:40.4638263+05:30"
+  },
+  {
+    "Id": 2,
+    "MedicineId": 4,
+    "MedicineName": "abcx",
+    "Quantity": 3,
+    "UnitPrice": 0.02,
+    "TotalAmount": 0.06,
+    "SaleDate": "2026-09-16T01:19:06.2418469+05:30"
+  },
+  {
+    "Id": 3,
+    "MedicineId": 5,
+    "MedicineName": "hahah",
+    "Quantity": 86,
+    "UnitPrice": 90,
+    "TotalAmount": 7740,
+    "SaleDate": "2026-09-16T01:21:14.5763213+05:30"
+  }
+]

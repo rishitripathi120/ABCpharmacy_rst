@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ABC Pharmacy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>ABC Pharmacy</h1>
+
+        <div class="toolbar">
+            <input type="text"
+                   id="searchInput"
+                   placeholder="Search medicine..." />
+
+            <button onclick="searchMedicines()">
+                Search
+            </button>
+
+            <button onclick="showAddMedicineForm()">
+                Add Medicine
+            </button>
+        </div>
+
+        <div id="message"></div>
+
+        <!-- Add Medicine -->
+        <div id="medicineForm" class="form-container hidden">
+
+            <h2>Add Medicine</h2>
+
+            <form onsubmit="addMedicine(event)">
+
+                <div class="form-group">
+                    <label>Medicine Name</label>
+                    <input type="text" id="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Notes</label>
+                    <textarea id="notes"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Expiry Date</label>
+                    <input type="date" id="expiryDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Quantity</label>
+                    <input type="number" id="quantity" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Price</label>
+                    <input type="number"
+                           id="price"
+                           min="0"
+                           step="0.01"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label>Brand</label>
+                    <input type="text" id="brand" required>
+                </div>
+
+                <button type="submit">
+                    Save Medicine
+                </button>
+
+                <button type="button"
+                        onclick="hideAddMedicineForm()">
+                    Cancel
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Medicine List -->
+        <h2>Medicine List</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Brand</th>
+                    <th>Expiry Date</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="medicineTableBody">
+            </tbody>
+        </table>
+
+        <!-- Sales -->
+        <h2>Sales History</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Medicine</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Total</th>
+                    <th>Sale Date</th>
+                </tr>
+            </thead>
+
+            <tbody id="salesTableBody">
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
